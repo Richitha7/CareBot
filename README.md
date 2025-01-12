@@ -1,33 +1,33 @@
 
 # Medical Chatbot with RAG and FastAPI
 # CareBot
+
 This project is an AI-powered Medical Chatbot designed to provide medical information and assistance. It combines Retrieval-Augmented Generation (RAG) techniques, a pre-trained large language model (Phi-3-mini-128k-instruct), and a custom knowledge base to generate relevant and context-specific answers to user queries.
-Features
-Retrieval-Augmented Generation (RAG): Integrates a knowledge base for more accurate and contextually relevant answers.
-FastAPI Backend: A fast and efficient API to process user queries and deliver responses.
-Customizable Knowledge Base: Create and manage a domain-specific knowledge base using LangChain.
-AI Model Integration: Utilizes microsoft/Phi-3-mini-128k-instruct for text generation.
-Interactive Query Handling: Users can submit medical-related questions and receive precise answers.
-Histogram Analysis: Visualizes document token lengths for optimized chunking.
 
-How It Works
-Knowledge Base Creation:
+## Features:
+- **Retrieval-Augmented Generation (RAG)**: Integrates a knowledge base for more accurate and contextually relevant answers.
+- **FastAPI Backend**: A fast and efficient API to process user queries and deliver responses.
+- **Customizable Knowledge Base**: Create and manage a domain-specific knowledge base using LangChain.
+- **AI Model Integration**: Utilizes `microsoft/Phi-3-mini-128k-instruct` for text generation.
+- **Interactive Query Handling**: Users can submit medical-related questions and receive precise answers.
+- **Histogram Analysis**: Visualizes document token lengths for optimized chunking.
 
-Text data is preprocessed using LangChain's Document and split into chunks for efficient retrieval using the RecursiveCharacterTextSplitter.
-Query Handling:
+## How It Works:
 
-A user query is matched with relevant chunks from the knowledge base using vector similarity search (e.g., KNOWLEDGE_VECTOR_DATABASE.similarity_search).
-Prompt Construction:
+### 1. **Knowledge Base Creation**:
+- Text data is preprocessed using LangChain's Document and split into chunks for efficient retrieval using the `RecursiveCharacterTextSplitter`.
 
-The retrieved context and user query are formatted into a prompt using a pre-defined RAG template.
-Answer Generation:
+### 2. **Query Handling**:
+- A user query is matched with relevant chunks from the knowledge base using vector similarity search (e.g., `KNOWLEDGE_VECTOR_DATABASE.similarity_search`).
 
-The formatted prompt is passed to the Phi-3 model to generate a concise and contextually relevant answer.
-API Integration:
+### 3. **Prompt Construction**:
+- The retrieved context and user query are formatted into a prompt using a pre-defined RAG template.
 
-The FastAPI backend processes incoming user queries, retrieves context, formats the RAG prompt, and returns the AI-generated response.
+### 4. **Answer Generation**:
+- The formatted prompt is passed to the Phi-3 model to generate a concise and contextually relevant answer.
 
-
+### 5. **API Integration**:
+- The FastAPI backend processes incoming user queries, retrieves context, formats the RAG prompt, and returns the AI-generated response.
 
 
 
