@@ -12,6 +12,20 @@ This project is an AI-powered Medical Chatbot designed to provide medical inform
 - **Interactive Query Handling**: Users can submit medical-related questions and receive precise answers.
 - **Histogram Analysis**: Visualizes document token lengths for optimized chunking.
 
+---
+
+## 🛠️ Tech Stack
+
+- **LLM**: Microsoft’s [`phi-3-mini-128k-instruct`](https://huggingface.co/microsoft/phi-3-mini-128k-instruct)  
+- **RAG Framework**: LangChain for vector search & prompt formatting  
+- **API**: FastAPI (Python)  
+- **Frontend**: React.js  
+- **Embedding**: HuggingFace or OpenAI embeddings  
+- **Vector Store**: FAISS / ChromaDB (pluggable)
+
+---
+
+
 ## How It Works:
 
 ### 1. **Knowledge Base Creation**:
@@ -28,6 +42,10 @@ This project is an AI-powered Medical Chatbot designed to provide medical inform
 
 ### 5. **API Integration**:
 - The FastAPI backend processes incoming user queries, retrieves context, formats the RAG prompt, and returns the AI-generated response.
+
+## 💻 Local Setup
+
+### 🔧 Backend (FastAPI)
 
 
 
