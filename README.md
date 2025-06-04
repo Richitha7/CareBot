@@ -4,6 +4,8 @@
 
 This project is an AI-powered Medical Chatbot designed to provide medical information and assistance. It combines Retrieval-Augmented Generation (RAG) techniques, a pre-trained large language model (Phi-3-mini-128k-instruct), and a custom knowledge base to generate relevant and context-specific answers to user queries.
 
+---
+
 ## Features:
 - **Retrieval-Augmented Generation (RAG)**: Integrates a knowledge base for more accurate and contextually relevant answers.
 - **FastAPI Backend**: A fast and efficient API to process user queries and deliver responses.
@@ -14,7 +16,7 @@ This project is an AI-powered Medical Chatbot designed to provide medical inform
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **LLM**: Microsoft’s [`phi-3-mini-128k-instruct`](https://huggingface.co/microsoft/phi-3-mini-128k-instruct)  
 - **RAG Framework**: LangChain for vector search & prompt formatting  
